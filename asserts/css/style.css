@@ -1,0 +1,377 @@
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    color: green;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    line-height: 30px;
+    color: black;
+}
+
+
+.container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between div and image */
+    width: 100%;
+    padding: 20px;
+}
+
+.content {
+    width: 50%; /* Adjust size of text content */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.image-text{
+    display: flex;
+    align-items: center;
+    
+}
+
+.image {
+    width: 45%; 
+    max-width: 500px; 
+}
+.text-beside{
+    width: 65%;
+    padding-left: 90px;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.text-beside h2{
+    color: #ff9800;
+}
+
+.text-beside span{
+    color: green;
+    font-weight: bolder;
+}
+.text-beside .coral-text{
+    color: #ff9800;
+    font-weight: bolder;
+}
+
+/*Navbar*/
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    padding: 10px 20px;
+    height: 80px;
+  }
+  
+  /* Brand Name */
+  .brand {
+    color: #ff9800;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    color: #ff9800;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .search-bar button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  /* Hamburger Menu (Hidden by Default) */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  /* Responsive Styles */
+ /* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links, .search-bar {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #444;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .nav-links.active, .search-bar.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .search-bar {
+      padding: 10px;
+      justify-content: center;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  }/*ffff*/
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-wrapper {
+    display: flex;
+    gap: 90px;
+    position: relative;
+    top: 20px;
+}
+
+.text-box {
+    width: 250px; /* Reduce width */
+    min-height: 200px; /* Allow height to grow */
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack elements inside */
+    gap: 10px;
+    text-align: center; /* Centers text */
+}
+.text-box-1 span{
+    color: #ff9800;
+    font-weight: bolder;
+    font-size: large;
+    
+}
+.text-box-1 .real{
+    width: auto;
+    height: auto;
+}
+.stars {
+    color: #ff9800;
+    font-size: 30px;
+}
+.review{
+    font-size: 20px
+}
+
+/* Styling for the circle images */
+.circle-group {
+    display: flex;
+    gap: 5px; /* Space between the circles */
+}
+
+.circle {
+    width: 30px; /* Adjust size */
+    height: 30px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the image fits well */
+}
+
+/* Keeps the image in its place */
+.right-image {
+    width: 40%; /* Adjust the width */
+    height: 40%; /* Maintain aspect ratio */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    margin-left: auto; /* Pushes image to the right */
+    display: block; /* Ensures proper positioning */
+}
+
+
+h1{
+    color: green;
+}
+h1 span{
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.container p{
+    font-weight: bold;
+}
+
+/*footer*/
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    color: coral;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: coral;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
+/*Media Queries*/
+/* Default styles are already in place */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .content {
+        width: 90%; /* Adjust width */
+        text-align: center;
+    }
+    .image-text {
+        flex-direction: column; /* Stack image and text */
+        text-align: center;
+    }
+    .image {
+        width: 80%; /* Reduce image size */
+    }
+    .text-beside {
+        width: 100%; /* Full width for better readability */
+        padding-left: 0;
+    }
+    .text-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-image {
+        width: 60%;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .search {
+        position: static;
+        margin-top: 10px;
+    }
+    .content h1 {
+        font-size: 24px; /* Reduce heading size */
+    }
+    .text-beside h2 {
+        font-size: 20px;
+    }
+    .text-box {
+        width: 100%; /* Full width on smaller screens */
+    }
+    .circle-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .right-image {
+        width: 80%;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-section {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
