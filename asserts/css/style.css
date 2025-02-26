@@ -4,7 +4,7 @@
     height: auto;
     margin: auto;
     position: relative;
-    color: green;
+    color: black;
 }
 
 .content .par{
@@ -47,41 +47,38 @@
 }
 
 .text-beside h2{
-    color: #ff9800;
+    color: rgb(110, 230, 230);
 }
 
 .text-beside span{
-    color: green;
+    color: black;
     font-weight: bolder;
 }
 .text-beside .coral-text{
-    color: #ff9800;
+    color: rgb(88, 209, 209);
     font-weight: bolder;
 }
 
-/*Navbar*/
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Navbar Styles */
-  .navbar {
+/* Navbar Styles */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: green;
+    background-color: rgb(216, 245, 245);
     padding: 10px 20px;
     height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
+    box-shadow: 0 5px 10px;
   }
   
-  /* Brand Name */
-  .brand {
-    color: #ff9800;
-    font-size: 24px;
-    font-weight: bolder;
+  /* Brand image */
+  .brand-image {
+    height: 40px; /* Adjust based on your logo size */
+    width: auto;
   }
   
   /* Navigation Links */
@@ -92,83 +89,239 @@
   
   .nav-links li {
     margin-left: 20px;
+    padding-right: 20px;
   }
   
   .nav-links a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 18px;
   }
   
   .nav-links a:hover {
-    color: #ff9800;
+    color: rgb(214, 230, 230);
+    color: #333;
+  }
+
+  /* Ensure the parent has position: relative */
+.featured-popup {
+    position: relative;
+    margin-left: 20px;
   }
   
-  /* Search Bar */
-  .search-bar {
+  /* Hide popup initially */
+  .popup-container {
+    display: none;
+    position: absolute;
+    top: 100%; /* Below the navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Show popup on hover */
+  .featured-popup:hover .popup-container {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Popup layout */
+  .popup-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Left & Right sections */
+  .popup-left, .popup-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+  }
+  
+  /* Vertical Divider */
+  .popup-divider {
+    width: 2px;
+    background: #ddd;
+    height: 100%;
+  }
+  
+  /* Popup Items */
+  .popup-item {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    transition: background 0.3s ease, transform 0.2s ease;
   }
   
-  .search-bar input {
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-  }
-  
-  .search-bar button {
-    background: none;
-    border: none;
+  .popup-item:hover {
+    background: rgb(192, 230, 230);
     color: white;
-    cursor: pointer;
-    margin-left: 5px;
+    transform: translateY(-3px);
   }
   
-  /* Hamburger Menu (Hidden by Default) */
-  .menu-toggle {
+  .popup-item .icon {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  /* Small Bottom Box */
+  .bottom-box {
+    text-align: center;
+    background: #eee;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+  }
+  
+  .bottom-box i {
+    font-size: 24px;
+    color: #ff6600;
+  }
+  
+  .bottom-box p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #333;
+  }
+  
+  
+  
+  
+  /* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(216, 245, 245);
+    padding: 10px 20px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
+    box-shadow: 0 5px 10px;
+}
+
+/* Brand image */
+.brand-image {
+    height: 40px; 
+    width: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: rgb(214, 230, 230);
+    color: #333;
+}
+
+/* REQUEST A DEMO Button */
+.request-demo button {
+    background-color: #333; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 25px;
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+}
+
+.request-demo button:hover {
+    background-color: #5ca3f0; 
+}
+
+
+.menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
-  }
-  
-  .menu-toggle .bar {
+}
+
+.menu-toggle .bar {
     width: 25px;
     height: 3px;
     background-color: white;
     margin: 4px 0;
-  }
-  
-  /* Responsive Styles */
- /* Responsive Styles */
+}
+
+
 @media (max-width: 768px) {
-    .nav-links, .search-bar {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #444;
-      position: absolute;
-      top: 60px;
-      left: 0;
+    .nav-links,
+    .request-demo {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px; 
+        left: 0;
+        z-index: 999; 
     }
-  
-    .nav-links.active, .search-bar.active {
-      display: flex;
+
+    .nav-links.active,
+    .request-demo.active {
+        display: flex;
     }
-  
+
+    .nav-links {
+        padding-top: 10px; 
+    }
+
     .nav-links li {
-      margin: 10px 0;
-      text-align: center;
+        margin: 10px 0;
+        text-align: center;
     }
-  
-    .search-bar {
-      padding: 10px;
-      justify-content: center;
+
+    .request-demo {
+        padding: 10px;
+        justify-content: center;
+        background-color: white; 
     }
-  
+
     .menu-toggle {
-      display: flex;
+        display: flex;
     }
-  }/*ffff*/
+}
+
+
+body {
+    padding-top: 80px;
+}
+  
+  /*ffff*/
 .container {
     display: flex;
     align-items: center;
@@ -183,16 +336,16 @@
 }
 
 .text-box {
-    width: 250px; /* Reduce width */
-    min-height: 200px; /* Allow height to grow */
+    width: 250px; 
+    min-height: 200px; 
     display: flex;
     align-items: center;
-    flex-direction: column; /* Stack elements inside */
+    flex-direction: column; 
     gap: 10px;
-    text-align: center; /* Centers text */
+    text-align: center; 
 }
 .text-box-1 span{
-    color: #ff9800;
+    color: rgb(119, 219, 219);
     font-weight: bolder;
     font-size: large;
     
@@ -202,7 +355,7 @@
     height: auto;
 }
 .stars {
-    color: #ff9800;
+    color: rgb(114, 224, 224);
     font-size: 30px;
 }
 .review{
@@ -229,14 +382,16 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
     margin-left: auto; /* Pushes image to the right */
     display: block; /* Ensures proper positioning */
+    
 }
 
 
 h1{
-    color: green;
+    color: black;
+    font-weight: bold;
 }
 h1 span{
-    color: #ff9800;
+    color: rgb(101, 194, 194);
     font-weight: bold;
 }
 
@@ -374,4 +529,163 @@ h1 span{
         max-width: 100%;
         margin-bottom: 15px;
     }
+}
+
+/*features*/
+.features{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+.features h3{
+    color: #70b0fa;
+}
+
+.custom-hr{
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #333, transparent);
+    margin: 20px auto;
+}
+.key{
+    font-size: 4.5rem;
+    color: #333;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+.container-rap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: stretch; /* Ensure all containers have the same height */
+}
+
+.icon-text-container {
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    min-width: 200px;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+
+.text h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.5em;
+}
+
+.text p {
+    margin: 0;
+    color: #666;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .icon-text-container {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .icon-text-container {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-text-container {
+        flex: 1 1 100%;
+    }
+}
+
+.container-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between containers */
+    padding: 20px;
+  }
+  
+  .container-row {
+    position: relative;
+    width: 30%; /* Adjust width as needed */
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(51, 54, 211, 0.1);
+    background-color: #ffffff;
+  }
+  
+  .container-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px; /* Adjust image size as needed */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%; /* Optional: Makes the image circular */
+  }
+  
+  .container h2 {
+    margin-top: 60px; /* Space for the image */
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .container p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .hollow{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  .container-side{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+.icon{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #666;
+    padding: 5px;
+    background-color: #eee;
+    align-items: flex-start;
+}
+h2{
+    font-size: 1.5em;
+    margin: 0;
+    color: #222;
+}
+h2 span{
+    font-weight: bold;
+    color: #333;
 }

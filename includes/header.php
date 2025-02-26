@@ -10,9 +10,10 @@
 </head>
 <body>
   <nav class="navbar">
-    <!-- Brand Name -->
-    <div class="brand">ProDesk247</div>
-
+    <!-- Brand Image -->
+    <div class="brand">
+      <img src="logo.png" alt="Brand Logo" class="brand-image">
+    </div>
     <!-- Hamburger Menu Icon (for mobile) -->
     <div class="menu-toggle" id="mobile-menu">
       <span class="bar"></span>
@@ -22,16 +23,72 @@
 
     <!-- Navigation Links -->
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Features</a></li>
+      <li><a href="index.php">Home</a></li>
+     
+      <li class="featured-popup">
+  <a href="Features.php">Features</a>
+  <!-- Pop-up container inside the list item -->
+  <div class="popup-container">
+    <div class="popup-content">
+      <!-- Left Section -->
+      <div class="popup-left">
+        <a href="#" class="popup-item">
+          <i class="fas fa-users icon"></i>
+          <span>Human Resource Management</span>
+        </a>
+        <a href="#" class="popup-item">
+          <i class="fas fa-money-bill-wave icon"></i>
+          <span>Payroll Management</span>
+        </a>
+        <a href="#" class="popup-item">
+          <i class="fas fa-box icon"></i>
+          <span>Procurement Management</span>
+        </a>
+        <a href="#" class="popup-item">
+          <i class="fas fa-tasks icon"></i>
+          <span>Project Management</span>
+        </a>
+      </div>
+
+      <!-- Divider -->
+      <div class="popup-divider"></div>
+
+      <!-- Right Section -->
+      <div class="popup-right">
+        <a href="#" class="popup-item">
+          <i class="fas fa-coins icon"></i>
+          <span>Finance Management</span>
+        </a>
+        <a href="#" class="popup-item">
+          <i class="fas fa-user-tie icon"></i>
+          <span>Remote Staff Management</span>
+        </a>
+        <a href="#" class="popup-item">
+          <i class="fas fa-briefcase icon"></i>
+          <span>Asset Management</span>
+        </a>
+        <a href="#" class="popup-item">
+          <i class="fas fa-handshake icon"></i>
+          <span>Client Relation Management</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Small Bottom Box -->
+    <div class="bottom-box">
+      <i class="fas fa-info-circle"></i>
+      <p>More Features Coming Soon</p>
+    </div>
+  </div>
+</li
+
       <li><a href="#">Roadmap</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
 
-    <!-- Search Bar -->
-    <div class="search-bar">
-      <input type="text" placeholder="Search...">
-      <button><i class="fas fa-search"></i></button>
+    <!--Demo-->
+    <div class="request-demo">
+      <button id="requestDemobutton">REQUEST A DEMO</button>
     </div>
   </nav>
 
