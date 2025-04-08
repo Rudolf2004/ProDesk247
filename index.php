@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<ht lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="asserts/css/style.css">
 </head>
-<b>
+<body>
       <!--Navbar-->
 
     <?php include 'includes/header.php' ?>
 
 
-    <div class="content">
+    <div class="content-x">
         <h1>Transform Your Business Operations with ProDesk 24/7</h1> 
         <p class="par">Your comprehensive software solution for enhancing productivity, streamlining<br> operations, and boosting efficiency.</p>
     </div>
@@ -164,12 +164,15 @@
 <P>ProDesk 24/7 is designed to meet the diverse needs of businesses, from small enterprises to large corporations, across various industries. Explore our key features:</P>
 
 <!--Demo-->
-<div class="request-demo">
-      <button id="requestDemobutton">BOOK FOR DEMO</button>
-    </div>
+  <div class="request-demo">
+    <a href="contact.php">
+      <button id="requestDemobutton">REQUEST A DEMO</button>
+    </a>
+  </div>
 
 
-    <section class="container-section">
+
+<section class="container-section">
   <div class="container-row">
     <img src="asserts/images/Hr.png" alt="Image 1" class="container-image">
     <h2>HR Management</h2>
@@ -277,12 +280,69 @@
         <h1>Recruitement Management</h1>
         <img src="" alt="Icon" class="icon">
         <h2><span>Skills Management</span>: Efficiently track and manage the skills and qualifications of potential candidates.</h2>
-        <h2><span></span></h2>
-        <h2><span></span></h2>
+        <h2><span>Job Offers</span> Streamline the process of creating and managing job offers for open positions.</h2>
+        <h2><span>Job Application</span> Simplify the submission and tracking of job applications from candidates.</h2><br>
+        <h2><span>Interview Scheduling</span> Coordinate and schedule candidate interviews seamlessly.</h2>
+        <br><br>
+        <h2><span>Offer Letters</span>Generate and send offer letters to selected candidates swiftly and accurately.</h2>
+        <h2><span>Candidates Database</span> Maintain a comprehensive database of potential candidates with detailed profiles.</h2>
         <h2><span></span></h2>
         <h2><span></span></h2>
     </div>
 </div>
+
+<div class="container">
+    <!-- Left side for text -->
+    <div class="text-side">
+        <h1>Comprehensive Reports</h1>
+        <p>Comprehensive Company Report Management integrates all reports across departments, including Task Reports, TimeLog Reports, Finance Reports, Income vs Expenses Reports, Leave Reports, Attendance Reports, Expenses Reports, Marketing Reports, Sales Reports, Procurement Reports, and Payroll Reports, and many more…</p>
+    </div>
+</div>
+
+<div class="video-container">
+        <h1>Welcome to ProDesk247</h1>
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/RJ38kmUqoo4"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <h2>Success Stories</h2>
+    </div>
+
+    <div>
+      <h1>Our Work Drives<br>Business forward</h1>
+      <div class="all">
+        <button id="view">VIEW ALL</button>
+      </div>
+    </div>
+
+    <div class="raw">
+      <div class="content">
+        <img src="asserts/images/God.webp" alt="image">
+        <div class="text">
+          <p>February 28</p>
+          <h2>Streamline Your Sales Process with Deal Creation in ProDesk247</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <img src="asserts/images/God1.webp" alt="image">
+        <div class="text">
+          <p>February 28</p>
+          <h2>Optimize Your Marketing Campaigns with ProDesk247</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <img src="asserts/images/God2.webp" alt="image">
+        <div class="text">
+          <p>February 28</p>
+          <h2>Efficient Leads Contact Management with ProDesk247</h2>
+        </div>
+      </div>
+    </div>
 
 
 <?php include 'includes/footer.php' ?>

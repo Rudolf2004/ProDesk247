@@ -23,11 +23,13 @@
         <div class="footer-section quick-links">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Roadmap</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="Features.php">Features</a></li>
+                <li><a href="Roadmap.php">Roadmap</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+                <li><a href="FAQ's.php">FAQs</a></li>
+                <li><a href="T&C.php">Terms & Conditions</a></li>
+                <li><a href="P&P.php">Privacy Policy</a></li>
             </ul>
         </div>
 
