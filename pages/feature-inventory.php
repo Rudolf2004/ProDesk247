@@ -14,13 +14,29 @@
     
 
 
-<?php 
-$pageTitle = "Inventory Management";
-include("../includes/header.php"); 
-?>
+<?php include '../includes/header.php'; ?>
 
+<section class="hero">
+    <h1>Inventory Management</h1>
+    <p>Effortlessly track stock levels, manage suppliers, and streamline inventory operations.</p>
+    <img src="../assets/inventory.jpg" alt="Inventory Management">
+</section>
 
-<?php include("../includes/footer.php"); ?>
+<section class="feature-details">
+    <h2>Key Benefits</h2>
+    <ul>
+        <li>Real-time stock updates</li>
+        <li>Automated low-stock alerts</li>
+        <li>Multi-location inventory tracking</li>
+    </ul>
+    <img src="../assets/inventory-screenshot.png" alt="Inventory Dashboard">
+</section>
+
+<section class="cta">
+    <a href="contact.php" class="btn">Request a Demo</a>
+</section>
+
+<?php include '../includes/footer.php'; ?>
 
 
 
